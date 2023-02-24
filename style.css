@@ -1,0 +1,703 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.header {
+    width: 100%;
+    height: 9vh;
+    padding: 10px 30px;
+    background-color: rgb(7, 15, 23);
+    animation: headerborder 3s linear infinite;
+}
+
+@keyframes headerborder {
+
+    0% {
+        border-bottom: 1px solid rgb(89, 251, 249);
+    }
+
+    20% {
+
+        border-bottom: 1px solid rgb(246, 58, 155);
+    }
+
+    40% {
+
+        border-bottom: 1px solid rgb(67, 255, 111);
+    }
+
+    60% {
+
+        border-bottom: 1px solid rgb(253, 149, 38);
+    }
+
+    80% {
+        border-bottom: 1px solid rgb(247, 255, 26);
+    }
+
+    100% {
+
+        border-bottom: 1px solid rgb(69, 255, 246);
+    }
+}
+
+.header h5 {
+    font-size: 28px;
+    color: rgb(109, 224, 249);
+    letter-spacing: 3px;
+}
+
+/* upper btn box */
+.upper-btn-box {
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    padding: 30px;
+}
+
+/* left box */
+.upper-btn-box .left-box {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.upper-btn-box .left-box input[type="checkbox"]{
+width: 25px;
+height:25px;
+margin: 0px 0px 0px 12px;
+border: 2px solid rgb(0, 0, 0);
+outline: 3px solid rgb(125, 230, 246);
+cursor: pointer;
+}
+
+.upper-btn-box .left-box button {
+    border: none;
+    outline: 1px solid rgb(109, 224, 249);
+    background-color: rgb(12, 12, 12);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    width: fit-content;
+    font-weight: 500;
+    color: white;
+    margin: 0px 0px 0px 15px;
+}
+
+.upper-btn-box .left-box button:hover {
+    animation: buttonborder 3s linear infinite;
+}
+
+@keyframes buttonborder {
+
+    0% {
+        border: 1px solid white;
+        outline: 4px solid rgb(89, 251, 249);
+    }
+
+    10% {
+        border: 1px solid white;
+        outline: 4px solid rgb(103, 10, 110);
+    }
+
+    20% {
+        border: 1px solid white;
+        outline: 4px solid rgb(246, 58, 155);
+    }
+
+    30% {
+        border: 1px solid white;
+        outline: 4px solid rgb(34, 16, 172);
+    }
+
+    40% {
+        border: 1px solid white;
+        outline: 4px solid rgb(67, 255, 111);
+    }
+
+    50% {
+        border: 1px solid white;
+        outline: 4px solid rgb(67, 192, 255);
+    }
+
+    60% {
+        border: 1px solid white;
+        outline: 4px solid rgb(253, 149, 38);
+    }
+
+    70% {
+        border: 1px solid white;
+        outline: 4px solid rgb(67, 255, 189);
+    }
+
+    80% {
+        border: 1px solid white;
+        outline: 4px solid rgb(247, 255, 26);
+    }
+
+    90% {
+        border: 1px solid white;
+        border: 4px solid rgb(255, 26, 26);
+    }
+
+    100% {
+        border: 1px solid white;
+        outline: 4px solid rgb(69, 255, 246);
+    }
+}
+
+.upper-btn-box .right-box {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    margin-left: 30%;
+
+}
+
+.upper-btn-box .right-box i {
+    font-size: 22px;
+    color: rgb(109, 224, 249);
+    padding: 15px;
+}
+
+.upper-btn-box .right-box input {
+    outline: none;
+    border: none;
+    width: 70%;
+    border-bottom: 3px solid rgb(109, 224, 249);
+    background-color: black;
+    color: rgb(109, 224, 249);
+    font-size: 15px;
+    font-weight: 400;
+   
+}
+
+.upper-btn-box .right-box button {
+    border: 1px solid rgb(251, 180, 14);
+    outline: 1px solid rgb(14, 227, 255);
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    width: fit-content;
+    font-weight: 500;
+    color: white;
+    margin: 0px 0px 0px 15px;
+}
+
+.upper-btn-box .right-box button:hover {
+    animation: buttonborder 3s linear infinite;
+}
+
+@keyframes buttonborder {
+
+    0% {
+        border: 1px solid white;
+        outline: 4px solid rgb(89, 251, 249);
+    }
+
+    10% {
+        border: 1px solid white;
+        outline: 4px solid rgb(103, 10, 110);
+    }
+
+    20% {
+        border: 1px solid white;
+        outline: 4px solid rgb(246, 58, 155);
+    }
+
+    30% {
+        border: 1px solid white;
+        outline: 4px solid rgb(34, 16, 172);
+    }
+
+    40% {
+        border: 1px solid white;
+        outline: 4px solid rgb(67, 255, 111);
+    }
+
+    50% {
+        border: 1px solid white;
+        outline: 4px solid rgb(67, 192, 255);
+    }
+
+    60% {
+        border: 1px solid white;
+        outline: 4px solid rgb(253, 149, 38);
+    }
+
+    70% {
+        border: 1px solid white;
+        outline: 4px solid rgb(67, 255, 189);
+    }
+
+    80% {
+        border: 1px solid white;
+        outline: 4px solid rgb(247, 255, 26);
+    }
+
+    90% {
+        border: 1px solid white;
+        border: 4px solid rgb(255, 26, 26);
+    }
+
+    100% {
+        border: 1px solid white;
+        outline: 4px solid rgb(69, 255, 246);
+    }
+}
+
+/* table box */
+.table-box {
+    width: 100%;
+    padding: 30px;
+}
+
+.table-box table {
+    width: 100%;
+    animation: tableborder 3s linear infinite;
+    background-color: rgb(7, 18, 23);
+}
+
+@keyframes tableborder {
+
+    0% {
+        border-bottom: 1px solid rgb(89, 251, 249);
+        border-top: 1px solid rgb(89, 251, 103);
+    }
+
+    20% {
+        border-top: 1px solid rgb(89, 251, 249);
+        border-bottom: 1px solid rgb(246, 58, 155);
+    }
+
+    40% {
+        border-top: 1px solid rgb(89, 251, 249);
+        border-bottom: 1px solid rgb(67, 255, 111);
+    }
+
+    60% {
+        border-top: 1px solid rgb(89, 251, 249);
+        border-bottom: 1px solid rgb(253, 149, 38);
+    }
+
+    80% {
+        border-top: 1px solid rgb(89, 251, 249);
+        border-bottom: 1px solid rgb(247, 255, 26);
+    }
+
+    100% {
+        border-top: 1px solid rgb(89, 251, 249);
+        border-bottom: 1px solid rgb(69, 255, 246);
+    }
+}
+
+.table-box table tr th {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px 0px 4px 0px;
+    animation: thborder 3s linear infinite;
+    letter-spacing: 2px;
+    text-align: center;
+
+}
+
+@keyframes thborder {
+
+    0% {
+        border-right: 1px solid rgb(89, 251, 249);
+        border-bottom: 1px solid rgb(247, 255, 26);
+    }
+
+    20% {
+
+        border-right: 1px solid rgb(246, 58, 155);
+        border-bottom: 1px solid rgb(247, 255, 26);
+    }
+
+    40% {
+
+        border-right: 1px solid rgb(67, 255, 111);
+        border-bottom: 1px solid rgb(255, 26, 221);
+    }
+
+    60% {
+
+        border-right: 1px solid rgb(253, 149, 38);
+        border-bottom: 1px solid rgb(49, 26, 255);
+    }
+
+    80% {
+        border-right: 1px solid rgb(247, 255, 26);
+        border-bottom: 1px solid rgb(255, 26, 76);
+    }
+
+    100% {
+
+        border-right: 1px solid rgb(69, 255, 246);
+        border-bottom: 1px solid rgb(26, 221, 255);
+    }
+}
+
+.table-box table tr td {
+    color: rgb(219, 240, 245);
+    font-size: 15px;
+    font-weight: 300;
+    padding: 3px 0px 3px 0px;
+    animation: tdborder 3s linear infinite;
+    letter-spacing: 2px;
+    text-align: center;
+
+
+}
+
+@keyframes tdborder {
+
+    0% {
+        border-right: 1px solid rgb(89, 251, 249);
+        border-bottom: 1px solid rgb(247, 255, 26);
+    }
+
+    20% {
+
+        border-right: 1px solid rgb(246, 58, 155);
+        border-bottom: 1px solid rgb(247, 255, 26);
+    }
+
+    40% {
+
+        border-right: 1px solid rgb(67, 255, 111);
+        border-bottom: 1px solid rgb(255, 26, 221);
+    }
+
+    60% {
+
+        border-right: 1px solid rgb(253, 149, 38);
+        border-bottom: 1px solid rgb(49, 26, 255);
+    }
+
+    80% {
+        border-right: 1px solid rgb(247, 255, 26);
+        border-bottom: 1px solid rgb(255, 26, 76);
+    }
+
+    100% {
+
+        border-right: 1px solid rgb(69, 255, 246);
+        border-bottom: 1px solid rgb(26, 221, 255);
+    }
+}
+
+.table-box table tr td button {
+    background-color: rgb(7, 15, 23);
+    border: 1px solid rgb(251, 180, 14);
+    outline: 1px solid rgb(14, 227, 255);
+    padding: 5px 0px 5px;
+    border-radius: 9px;
+    font-size: 13px;
+    width: fit-content;
+    color: white;
+    width: 30%;
+    align-items: center;
+    margin-left: 3%;
+
+}
+
+.table-box table tr td button:hover {
+    animation: tdbutton 3s linear infinite;
+}
+
+@keyframes tdbutton {
+
+    0% {
+        border: 1px solid white;
+        outline: 2px solid rgb(89, 251, 249);
+    }
+
+    10% {
+        border: 1px solid white;
+        outline: 2px solid rgb(103, 10, 110);
+    }
+
+    20% {
+        border: 1px solid white;
+        outline: 2px solid rgb(246, 58, 155);
+    }
+
+    30% {
+        border: 1px solid white;
+        outline: 2px solid rgb(34, 16, 172);
+    }
+
+    40% {
+        border: 1px solid white;
+        outline: 2px solid rgb(67, 255, 111);
+    }
+
+    50% {
+        border: 1px solid white;
+        outline: 4px solid rgb(67, 192, 255);
+    }
+
+    60% {
+        border: 1px solid white;
+        outline: 2px solid rgb(253, 149, 38);
+    }
+
+    70% {
+        border: 1px solid white;
+        outline: 2px solid rgb(67, 255, 189);
+    }
+
+    80% {
+        border: 1px solid white;
+        outline: 2px solid rgb(247, 255, 26);
+    }
+
+    90% {
+        border: 1px solid white;
+        border: 2px solid rgb(255, 26, 26);
+    }
+
+    100% {
+        border: 1px solid white;
+        outline: 2px solid rgb(69, 255, 246);
+    }
+}
+/* start model coding */
+.model{
+width: 0%;
+position: fixed;
+top: 50%;
+left: 50%;
+height: 400px;
+background-color: rgb(0, 0, 0);
+transform: translate(-50%,-50%);
+display: flex;
+opacity: 0;
+animation: topborder 5s linear infinite;
+z-index: -1;
+transition: 0.5s ease-in-out;
+}
+
+@keyframes topborder {
+
+    0% {
+        border-top: 10px groove rgb(123, 186, 234);
+    }
+
+    20% {
+        border-top: 10px groove rgb(10, 31, 48);
+    }
+
+    40% {
+        border-top: 10px groove rgb(123, 186, 234);
+    }
+
+    60% {
+        border-top: 10px groove rgb(10, 31, 48);
+    }
+
+    80% { 
+        border-top: 10px groove rgb(123, 186, 234);
+    }
+
+    100% {
+        border-top: 10px groove rgb(10, 31, 48);
+    }
+}
+.model:active{
+    opacity: 1;
+    z-index: 1;
+    width: 50%;
+}
+
+.model .close-icon{
+    position: absolute;
+    right: -18px;
+    top: -36px;
+    font-size: 30px;
+    padding: 10px;
+    color:rgb(123, 186, 234,0.8);
+
+}
+
+.model .left-model{
+    width: 35%;
+    height: 100%;
+    background-color:  rgb(7, 15, 23);
+
+    
+}
+
+.model .left-model .img-box{
+width: 100%;
+height: 200px;
+display: flex;
+padding: 10px;
+position: relative;
+
+}
+.model .left-model .img-box i{
+    font-size: 30px;
+    color:  rgb(14, 83, 117);
+    margin-top: 30%;
+    margin-left: 70%;
+    position: absolute;
+
+}
+.model .left-model .img-box img{
+    border-radius: 10px;
+    position: absolute;
+    padding: 5px;
+
+}
+.model .left-model .img-box input{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-top: 30%;
+    margin-left: 70%;
+   opacity: 0;
+}
+
+.model .right-model{
+    width: 70%;
+    height: 100%;
+    animation: rightborder 2s linear infinite;
+    padding: 50px;
+}
+@keyframes rightborder {
+
+    0% {
+        border-left: 10px groove rgb(3, 25, 42);
+    }
+
+    30% {
+        border-left: 10px groove rgb(69, 60, 8);
+    }
+
+    60% {
+        border-left: 10px groove rgb(48, 10, 48);
+    }
+
+    100% {
+        border-left: 10px groove rgb(3, 63, 80);
+    }
+}
+.model .right-model .input-box{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    margin-top: 4px;
+}
+.model .right-model .input-box label{
+  
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 0px 4px 0px;
+    letter-spacing: 1px;
+ 
+}
+.model .right-model .input-box input{
+    outline: none;
+    border: none;
+    width: 70%;
+    border-bottom: 1px solid  rgb(123, 186, 234);
+    background-color: black;
+    color: rgb(123, 186, 234);
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding: 2px;
+}
+.model .right-model div button{
+    border: none;
+    outline: 1px solid rgb(109, 224, 249);
+    background-color: rgb(12, 12, 12);
+    padding: 9px;
+    border-radius: 10px;
+    font-size: 15px;
+    width: 45%;
+    font-weight: 500;
+    color: white;
+    margin: 30px 0px 0px 14px;
+}
+
+.model .right-model div button:hover {
+    animation: modelbutton 3s linear infinite;
+}
+
+@keyframes modelbutton {
+
+    0% {
+        border: 1px solid white;
+        outline: 4px solid rgb(89, 251, 249);
+    }
+
+    10% {
+        border: 1px solid white;
+        outline: 4px solid rgb(103, 10, 110);
+    }
+
+    20% {
+        border: 1px solid white;
+        outline: 4px solid rgb(246, 58, 155);
+    }
+
+    30% {
+        border: 1px solid white;
+        outline: 4px solid rgb(34, 16, 172);
+    }
+
+    40% {
+        border: 1px solid white;
+        outline: 4px solid rgb(67, 255, 111);
+    }
+
+    50% {
+        border: 1px solid white;
+        outline: 4px solid rgb(67, 192, 255);
+    }
+
+    60% {
+        border: 1px solid white;
+        outline: 4px solid rgb(253, 149, 38);
+    }
+
+    70% {
+        border: 1px solid white;
+        outline: 4px solid rgb(67, 255, 189);
+    }
+
+    80% {
+        border: 1px solid white;
+        outline: 4px solid rgb(247, 255, 26);
+    }
+
+    90% {
+        border: 1px solid white;
+        border: 4px solid rgb(255, 26, 26);
+    }
+
+    100% {
+        border: 1px solid white;
+        outline: 4px solid rgb(69, 255, 246);
+    }
+}
+.model .right-model div button:disabled{
+    background-color: aqua;
+    color: black;
+    border: 2px solid rgb(6, 68, 68);
+}

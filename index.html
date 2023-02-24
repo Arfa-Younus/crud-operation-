@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Operations</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+
+<body>
+    <div class="header">
+        <h5>Employee</h5>
+    </div>
+
+    <div class="upper-btn-box">
+        <div class="left-box">
+            <button id="add-employee-btn"  style="border: 1px solid rgb(114, 175, 182);"><i class="fa fa-plus"></i>&nbsp;Add Employee</button>
+            <button  style="border: 1px solid rgb(255, 0, 221);" id="del-all-btn"><i class="fa fa-eraser"></i>&nbsp;Clear
+                All Data</button>
+                <input type="checkbox" id="del-all-box">
+        </div>
+        <div class="right-box">
+            <i class="fa fa-search"></i>
+            <input type="text" id="search-input" placeholder="Enter Employee Id ">
+            <button id="search-btn">Search</button>
+        </div>
+    </div>
+    <div class="table-box">
+        <table>
+            <tr>
+                <th>Sr No</th>
+                <th>Profile</th>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Last Name</th>
+                <th>E-mail</th>
+                <th>Office-Code</th>
+                <th>Job-Title</th>
+                <th>Actions</th>
+            </tr>
+            <tbody id="table-data">
+
+            </tbody>
+        </table>
+    </div> 
+    <div class="model">
+        <i class="fa fa-times-circle  close-icon"></i>
+        <div class="left-model">
+            <div class="img-box">
+                <img src="./assests/images/profile.png" alt="profile"  id="profile-pic" width="155" height="130">
+                <i class="fa fa-plus"></i>
+                <input type="file" id="upload-field">
+            </div>
+        </div>
+        <div class="right-model">
+ <form id="register-form">           
+    <div class="input-box">
+    <label for="Id">Id</label>&nbsp;
+    <input type="text" name="" id="id" placeholder="Enter Your ID" required>
+</div>
+<div class="input-box">
+    <label for="Name">Name</label>&nbsp;
+    <input type="text" name="" id="name"   placeholder="Enter Your Name" required>
+</div>
+<div class="input-box">
+    <label for="Last Name">Last Name</label>&nbsp;
+    <input type="text" name="" id="lastName"  placeholder="Enter Your Last Name" required>
+</div>
+<div class="input-box">
+    <label for="E-mail">E-mail</label>&nbsp;
+    <input type="email" name="" id="email"  placeholder="Enter Your Email" required>
+</div>
+<div class="input-box">
+    <label for="Office Code">Office Code</label>&nbsp;
+    <input type="number" name="" id="officeCode"  placeholder="Enter Your Office Code" required>
+</div>
+<div class="input-box">
+    <label for="Job Title">Job Title</label>&nbsp;
+    <input type="text" name="" id="JobTitle" placeholder="Enter Your Job Title" required>
+</div></form>
+            <div>
+                <button id="register-btn">Register</button>
+                <button id= "update-btn" disabled="disabled">Update</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
